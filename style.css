@@ -64,6 +64,45 @@ div {
 
 }
 
+/*.navBarDefault{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  identical to box height, or 100%
+  text-align: left;
+  color: #696969;
+}*/
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  background-color: none;
+}
+
+li {
+  float: left;
+  padding: 20px;
+  font-family: EB Garamond;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 100% */  
+  color: #353535;
+
+}
+
+
+
+
+
+
 .shadowbox {
   width: 15em;
   border: 1px solid #333;
