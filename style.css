@@ -3,6 +3,11 @@ html {
   background-color: #FAFAFA;
 }
 
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 /*Main element styling (h1, P, primaryButton)*/
 h1 {
   /*position: absolute;*/
@@ -68,23 +73,34 @@ h2 {
 }
 
 .primaryButton {
-   /* 
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 20px 69px;
-  */
-  /*
-  position: relative;
-  */
+
   display: block;
   margin: 0 auto;
   width: 285px;
   height: 60px;
-  /*
-  left: 578px;
-  top: 20px;
-  */ 
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(105, 105, 105, 0.25);
+  border-style: none;
+  border-radius: 10px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #696969;
+}
+
+
+.primaryButton:hover {
+
+  display: block;
+  margin: 0 auto;
+  width: 285px;
+  height: 60px;
+
   background: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(105, 105, 105, 0.25);
   border-style: solid;
@@ -97,20 +113,19 @@ h2 {
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  /* identical to box height, or 100% */
   text-align: center;
   color: #696969;
 }
 
-
 .tertiaryButton {
 
- margin: 0;
+ /*margin: 0;
  padding: 20px;
  display: block;
  float: right;
  width: auto;
  height: auto;
+ */
  background: none;
  border-style: none;
  font-family: EB Garamond;
@@ -123,6 +138,23 @@ h2 {
  color: #696969;
 }
 
+#otherFlavors {
+  margin: 0;
+  padding: 20px;
+  display: block;
+  float: right;
+  width: auto;
+  height: auto;
+}
+
+#backToHome {
+  margin: 0;
+  padding: 20px;
+  display: block;
+  float: left;
+  width: auto;
+  height: auto; 
+}
 
 
 /*Main div styling*/
@@ -252,19 +284,76 @@ a:active {
   color: #696969;
 }
 
+.card:hover {
+  box-shadow: 0px 0px 10px rgba(105, 105, 105, 0.25);
+  padding: 16px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px inside;
+  border-color: #F49740;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #353535;
+}
 
 
 
+/*.selectionDiv {
+  float: none;
+  position: absolute;
+  left: 46%;
+  padding: 20px;
+  display: block;
+  margin: 0 auto;
+  width: 100;
+  height: 60px;
+}
+*/
 
 
+.selectionDiv {
+  float: none;
+  position: absolute;
+  left: 45%;
+  padding: 20px;
+  
+  display: grid;
+  width: 200px;
+  height: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  grid-auto-rows: 4px;
+  grid-gap: 10px;
+}
 
 
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #FAFAFA;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F49740;
+  border-radius: 50%;
+  display: inline-block;
+}
 
+.dotActive {
+  height: 25px;
+  width: 25px;
+  background-color: #F49740;
+  border-radius: 50%;
+  display: inline-block;
+}
 
-.shadowbox {
-  width: 15em;
-  border: 1px solid #333;
-  box-shadow: 8px 8px 5px #444;
-  padding: 8px 12px;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+.dotPast {
+  height: 25px;
+  width: 25px;
+  background-color: #F4C69A;
+  border-radius: 50%;
+  display: inline-block;
 }
