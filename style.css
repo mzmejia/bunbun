@@ -365,7 +365,7 @@ a:active {
 
 
 
-/* EMPTY CART */
+/* CART */
 
 .tertiaryButtonCart {
   /*margin: 0;
@@ -503,4 +503,12 @@ a:active {
   width: fit-content;
   opacity: 25%;
   /*border-radius: 50%;*/
+}
+
+/* FILLED CART */
+
+.cartElement {
+  display: block;
+  margin: 4%;
+  width: 86%;
 }
