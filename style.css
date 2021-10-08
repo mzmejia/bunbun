@@ -1,4 +1,5 @@
-/*html styling*/
+/* -------------------- STYLING -------------------- */
+
 html {
   background-color: #FAFAFA;
 }
@@ -8,7 +9,9 @@ body {
   padding-right: 5%;
 }
 
-/*Main element styling (h1, P, primaryButton)*/
+
+/* -------------------- MAIN ELEMENT STYLING FOR TYPE -------------------- */
+
 h1 {
   /*position: absolute;*/
   /*width: 503px;
@@ -71,6 +74,9 @@ h2 {
   text-align: center;
   color: #696969;
 }
+
+
+/* -------------------- BUTTON STYLING -------------------- */
 
 .primaryButton {
 
@@ -157,8 +163,8 @@ h2 {
   height: auto; 
 }
 
+/* -------------------- MAIN DIV STYLING -------------------- */
 
-/*Main div styling*/
 #homeDiv {
     margin: auto;
     height: 700px;
@@ -177,7 +183,10 @@ h2 {
 
 }
 
-/*Navigation styling*/
+
+/* -------------------- NAVIGATION STYLING -------------------- */
+
+
 .NavList {
   list-style-type: none;
   margin: 0;
@@ -226,7 +235,9 @@ h2 {
 }
 
 
-/*Link styling*/
+/* -------------------- LINK STYLING -------------------- */
+
+
 a:link {
   color:#696969;
   text-decoration: none;
@@ -247,6 +258,9 @@ a:active {
   color:#F49740;
   text-decoration: none;
 }
+
+
+/* -------------------- CARDS -------------------- */
 
 
 * {
@@ -317,6 +331,9 @@ a:active {
 */
 
 
+/* -------------------- SELECTION NAV -------------------- */
+
+
 .selectionDiv {
   float: none;
   position: absolute;
@@ -330,7 +347,6 @@ a:active {
   grid-auto-rows: 4px;
   grid-gap: 10px;
 }
-
 
 .dot {
   height: 25px;
@@ -365,7 +381,7 @@ a:active {
 
 
 
-/* CART */
+/* -------------------- CART ELEMENTS -------------------- */
 
 .tertiaryButtonCart {
   /*margin: 0;
@@ -407,6 +423,23 @@ a:active {
   /* identical to box height, or 100%*/
   text-align: left;
   color: #353535;
+}
+
+.cartP {
+  /*position: absolute;
+  width: 503px;
+  height: 70px;
+  left: 469px;
+  top: 464px;*/
+  padding-right: 5%;
+  padding-bottom: 0%;  
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  /* or 117% */
+  text-align: center;
+  color: #696969;
 }
 
 .spacerCart {
