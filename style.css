@@ -169,7 +169,7 @@ h2 {
     margin: auto;
     height: 700px;
     width: 100%;
-    background-image: url('/Users/ma/Desktop/CMU - PUI/bunbun/homeBackground1.png');
+    background-image: url('./homeBackground1.png');
     background-repeat: no-repeat;
     background-size: 75%;
     background-position: center;
