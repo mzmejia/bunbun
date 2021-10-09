@@ -405,7 +405,7 @@ a:active {
   color: #696969;
  }
 
- .h3Cart {
+.h3Cart {
   /*position: absolute;*/
   /*width: 503px;
   height: 60px;
@@ -545,3 +545,331 @@ a:active {
   margin: 4%;
   width: 86%;
 }
+
+
+
+
+/* -------------------- CHECKOUT ELEMENTS -------------------- */
+
+
+/* Left side controls */
+.leftCheckout {
+  left: 0;
+  background-color: #FAFAFA;
+
+}
+
+/* Right side controls */
+.rightCheckout {
+  right: 0;
+  background-color: #FAFAFA;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #F49740;
+}
+
+/* Center cart content horizontally and vertically
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+ */
+
+.checkoutSelectionDiv {
+  padding-top: 30px;
+  float: none;
+  position: absolute;
+  padding-left: 11%;
+  
+  display: grid;
+  width: 250px;
+  height: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  grid-auto-rows: 4px;
+  grid-gap: 10px;
+}
+
+.checkoutFormDiv {
+  padding-top: 30px;
+
+  padding-left: 11%;
+  
+  display: grid;
+  width: 95%;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+}
+
+.checkoutH2Right {
+  /*position: absolute;*/
+  /*width: 503px;
+  height: 60px;
+  left: 469px;
+  top: 387px;*/
+  padding-left: 11%;
+  padding-bottom: 0px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  /* identical to box height, or 100%*/
+  text-align: left;
+  color: #353535;
+
+}
+
+.checkoutPRight {
+  /*position: absolute;
+  width: 503px;
+  height: 70px;
+  left: 469px;
+  top: 464px;*/
+  padding-left: 11%;
+  padding-bottom: 0px;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  /* or 117% */
+  text-align: left;
+  color: #696969;
+}
+
+.checkoutH2Left {
+  /*position: absolute;*/
+  /*width: 503px;
+  height: 60px;
+  left: 469px;
+  top: 387px;*/
+  padding-top: 90px;
+  padding-left: 5%;
+  padding-bottom: 0px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  /* identical to box height, or 100%*/
+  text-align: left;
+  color: #353535;
+
+}
+
+.checkoutPLeft {
+  /*position: absolute;
+  width: 503px;
+  height: 70px;
+  left: 469px;
+  top: 464px;*/
+  padding-left: 5%;
+  padding-bottom: 0px;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  /* or 117% */
+  text-align: left;
+  color: #696969;
+}
+
+.checkoutCentered img {
+  display: block;
+  margin: 4%;
+  width: 86%;
+}
+
+/*
+padding-top: 90px;
+*/
+
+
+.primaryButtonCheckout {
+  display: block;
+  margin: 5% 0% 0% 11%;
+
+  width: auto;
+  height: 60px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(105, 105, 105, 0.25);
+  border-style: none;
+  border-radius: 10px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 20px;
+  text-align: left;
+  color: #696969;
+}
+
+
+.primaryButtonCheckout:hover {
+
+  display: block;
+  margin: 5% 0% 0% 11%;
+
+  width: auto;
+  height: 60px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(105, 105, 105, 0.25);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #F49740;
+  border-radius: 10px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #696969;
+}
+
+
+
+.checkoutForm {
+  margin: 0% 0% 0% 11%;
+
+}
+
+label {
+  width: 84%;
+  padding-right: 20px;
+  display: inline-block;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: #696969;
+
+  padding-bottom: 10px;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 84%;
+  padding:20px;
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #E2E2E2;
+  border-radius: 10px;
+  height: 55px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #696969;
+
+}
+
+input:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F49740;
+  border-radius: 10px;
+}
+
+
+input:focus {
+  outline: none;
+  /*
+  outline-style: solid;
+  outline-width: 1px;
+  */
+  border-style: solid;
+  border-width: 2px;
+  border-color: #F49740;
+  border-radius: 10px;
+  background: white;
+}
+
+input:not(:placeholder-shown) {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #696969;
+  border-radius: 10px;
+  background: white;
+  color: #353535
+}
+
+input:not(:placeholder-shown):hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F49740;
+  border-radius: 10px;
+}
+
+input:not(:placeholder-shown):focus {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #F49740;
+  border-radius: 10px;
+  background: white;
+}
+
+
+
+
+
+
+
+
+.TEST {
+
+  display: block;
+  margin: 0 auto;
+  width: 285px;
+  height: 60px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(105, 105, 105, 0.25);
+  border-style: none;
+  border-radius: 10px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #696969;
+}
+
+
+.TEST:hover {
+
+  display: block;
+  margin: 0 auto;
+  width: 285px;
+  height: 60px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(105, 105, 105, 0.25);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #F49740;
+  border-radius: 10px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #696969;
+}
+
+
