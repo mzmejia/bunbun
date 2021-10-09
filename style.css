@@ -605,6 +605,22 @@ a:active {
   grid-gap: 10px;
 }
 
+
+.checkoutFormDivReview {
+  padding-top: 30px;
+
+  padding-left: 11%;
+  
+  display: grid;
+  width: 95%;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  opacity: 50%;
+}
+
+
 .checkoutH2Right {
   /*position: absolute;*/
   /*width: 503px;

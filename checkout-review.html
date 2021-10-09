@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Checkout - Details</title>
+    <title>Checkout - Review</title>
     <meta name="Marlon Z. Mejia" content="BunBun">
     <link href="style.css" rel="stylesheet">
       <!-- type="text/css" -->
@@ -16,8 +16,8 @@
     <nav>
       <ul class='NavList'>
         <!-- <li class='leftNavListItem'><a href="flavor.html">Order Now</a></li> -->
-        <li class='leftNavListItem'></u><a href="filled-cart.html">Go Back</a></u></li>
-        <li class='centerNavListItem'><!--Add colored underline: <u style='text-decoration-color: #F49740;'>--></u><a href="main.html">BunBun</a></u></li>
+        <li class='leftNavListItem'></u><a href="checkout-payment.html">Go Back</a></u></li>
+        <li class='centerNavListItem'></u><a href="main.html">BunBun</a></u></li>
 
       </ul>
     </nav>
@@ -29,40 +29,51 @@
     
     <div class="centered">
       <div class='checkoutSelectionDiv'> 
-        <a href="checkout-details.html"><span class="dotActive"></span></a>      
-        <span class="dot"></span>  <!--<a href="glaze.html"><span class="dotActive"></span></a>-->
-        <span class="dot"></span>
-        <span class="dot"></span>      
+        <a href="checkout-details.html"><span class="dotPast"></span></a>
+        <a href="checkout-address.html"><span class="dotPast"></span></a>      
+        <a href="checkout-payment.html"><span class="dotPast"></span></a>      
+        <a href="checkout-review.html"><span class="dotActive"></span></a> 
         <!-- dotActive: current; dotPast: past selection; dot: still to come-->
       </div>
 
-      <h2 class='checkoutH2Right'> Your details </h2>
+      <h2 class='checkoutH2Right'> Review information </h2>
 
 
       
       <!-- Form test -->
-      <div class='checkoutFormDiv'> 
+      <div class='checkoutFormDivReview'> 
         <p>
-          <label for="fname">First name</label>
-          <input type="text" id="fname" name="fname" placeholder="Type your first name" autofocus>
+          <label for="fnameFilled">First name</label>
+          <input type="text" id="fnameFilled" name="fnameFilled" placeholder="Jamie" >
         </p>
         <p>
-          <label for="lname">Last name</label>
-          <input type="text" id="lname" name="lname" placeholder="Type your last name">
+          <label for="lnameFilled">Last name</label>
+          <input type="text" id="lnameFilled" name="lnameFilled" placeholder="Rodrigez">
         </p>
       </div>
-      <div class='checkoutFormDiv'> 
+      <div class='checkoutFormDivReview'> 
         <p>
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Type your email">
+          <label for="emailFilled">Email</label>
+          <input type="text" id="emailFilled" name="emailFilled" placeholder="jrod96@gmail.com">
         </p>
         <p>
-          <label for="phone">Phone Number</label>
-          <input type="text" id="phone" name="phone" placeholder="Type your phone number">
+          <label for="phoneFilled">Phone Number</label>
+          <input type="text" id="phoneFilled" name="phoneFilled" placeholder="554-954-0144">
+        </p>
+      </div>
+      <div class='checkoutFormDivReview'> 
+        <p>
+          <label for="addressFilled">Address</label>
+          <input type="text" id="addressFilled" name="addressFilled" placeholder="293 Bluestone Drive, Pittsburgh, PA 15219">
+        </p>
+        <p>
+          <label for="cardFilled">Card Details</label>
+          <input type="text" id="cardFilled" name="cardFilled" placeholder="XXXX-XXXX-XXXX-2002">
+          <!-- Make this have to include 16 digits -->
         </p>
       </div>
       <!--<button class='tertiaryButton' id='backToHome'><a href="main.html">Go Back</a></button> -->
-      <button class='primaryButtonCheckout'><a href="checkout-address.html">Next Step</a></button>
+      <button class='primaryButtonCheckout'><a href="checkout-payment.html">Edit</a></button> 
     </div>
   </div>
 
@@ -80,7 +91,7 @@
 
 
       <!--<button class='tertiaryButton' id='backToHome'><a href="main.html">Go Back</a></button> -->
-      <button class='primaryButtonCheckoutPlaceOrderDisabled'>Place Order</button> <!-- <a href="flavor.html">Place Order</a></button>-->
+      <button class='primaryButtonCheckoutPlaceOrder'><a href="confirmation.html">Place Order</a></button>
 
 
 
