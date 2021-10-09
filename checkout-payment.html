@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Checkout - Address</title>
+    <title>Checkout - Payment</title>
     <meta name="Marlon Z. Mejia" content="BunBun">
     <link href="style.css" rel="stylesheet">
       <!-- type="text/css" -->
@@ -30,35 +30,36 @@
     <div class="centered">
       <div class='checkoutSelectionDiv'> 
         <a href="checkout-details.html"><span class="dotPast"></span></a>
-        <a href="checkout-address.html"><span class="dotActive"></span></a>      
-        <span class="dot"></span>
+        <a href="checkout-address.html"><span class="dotPast"></span></a>      
+        <a href="checkout-payment.html"><span class="dotActive"></span></a>      
         <span class="dot"></span>      
         <!-- dotActive: current; dotPast: past selection; dot: still to come-->
       </div>
 
-      <h2 class='checkoutH2Right'> Your address </h2>
+      <h2 class='checkoutH2Right'> Your payment </h2>
 
 
       
       <!-- Form test -->
       <div class='checkoutFormDiv'> 
         <p>
-          <label for="add1">Address 1</label>
-          <input type="text" id="add1" name="add1" placeholder="Type the address of your street" autofocus>
+          <label for="card">Card Details</label>
+          <input type="text" id="card" name="card" placeholder="Type your 9 digit card number" autofocus>
+          <!-- Make this have to include 9 digits -->
         </p>
-        <p>
-          <label for="add2">Address 2</label>
-          <input type="text" id="add2" name="add2" placeholder="Type address 2 - Optional (ex. Apt 233)">
-        </p>
-      </div>
-      <div class='checkoutFormDiv'> 
         <p>
           <label for="zip">Zip Code</label>
           <input type="text" id="zip" name="zip" placeholder="Type your zip code">
         </p>
+      </div>
+      <div class='checkoutFormDiv'> 
         <p>
-          <label for="city">City</label>
-          <input type="text" id="city" name="city" placeholder="Type your city">
+          <label for="expir">Expiration Date</label>
+          <input type="text" id="expir" name="expir" placeholder="Type the expiration date (MM/YY)">
+        </p>
+        <p>
+          <label for="cvc">CVC</label>
+          <input type="text" id="cvc" name="cvc" placeholder="Type the CVC (XXX)">
         </p>
       </div>
       <div class='checkoutFormDiv'> 
@@ -88,7 +89,7 @@
         
       </div>
       <!--<button class='tertiaryButton' id='backToHome'><a href="main.html">Go Back</a></button> -->
-      <button class='primaryButtonCheckout'><a href="checkout-payment.html">Next Step</a></button>
+      <button class='primaryButtonCheckout'><a href="checkout-review.html">Next Step</a></button>
     </div>
   </div>
 

@@ -542,6 +542,7 @@ a:active {
 
 .cartElement {
   display: block;
+  padding-top: 40px;
   margin: 4%;
   width: 86%;
 }
@@ -550,7 +551,6 @@ a:active {
 
 
 /* -------------------- CHECKOUT ELEMENTS -------------------- */
-
 
 /* Left side controls */
 .leftCheckout {
@@ -620,6 +620,23 @@ a:active {
   /* identical to box height, or 100%*/
   text-align: left;
   color: #353535;
+}
+
+.checkoutH3Right {
+  /*position: absolute;*/
+  /*width: 503px;
+  height: 60px;
+  left: 469px;
+  top: 387px;*/
+  padding-left: 5%;
+  padding-bottom: 0px;
+  font-family: 'EB Garamond', serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  /* identical to box height, or 100%*/
+  text-align: left;
+  color: #353535;
 
 }
 
@@ -629,7 +646,7 @@ a:active {
   height: 70px;
   left: 469px;
   top: 464px;*/
-  padding-left: 11%;
+  padding-left: 5%;
   padding-bottom: 0px;
   font-family: Lato;
   font-weight: 400;
@@ -736,10 +753,87 @@ padding-top: 90px;
 
 
 
+
+
+.primaryButtonCheckoutPlaceOrderDisabled {
+  display: block;
+  margin: 5% 0% 0% 5%;
+
+  width: auto;
+  height: 60px;
+
+  background: #FFFFFF;
+  border-style: none;
+  border-radius: 10px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 20px;
+  text-align: left;
+  color: #696969;
+  opacity: 50%;
+}
+
+
+.primaryButtonCheckoutPlaceOrder {
+  display: block;
+  margin: 5% 0% 0% 5%;
+
+  width: auto;
+  height: 60px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(105, 105, 105, 0.25);
+  border-style: none;
+  border-radius: 10px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 20px;
+  text-align: left;
+  color: #696969;
+}
+
+.primaryButtonCheckoutPlaceOrder:hover {
+
+  display: block;
+  margin: 5% 0% 0% 5%;
+
+  width: auto;
+  height: 60px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(105, 105, 105, 0.25);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #F49740;
+  border-radius: 10px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #696969;
+}
+
+
+
 .checkoutForm {
   margin: 0% 0% 0% 11%;
 
 }
+
+
+
+
 
 label {
   width: 84%;
@@ -827,49 +921,43 @@ input:not(:placeholder-shown):focus {
 
 
 
-.TEST {
-
-  display: block;
-  margin: 0 auto;
-  width: 285px;
-  height: 60px;
-
-  background: #FFFFFF;
-  box-shadow: 0px 0px 10px rgba(105, 105, 105, 0.25);
-  border-style: none;
+select {
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 84%;
+  padding:20px;
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #E2E2E2;
   border-radius: 10px;
+  height: auto;
 
   font-family: Lato;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  text-align: center;
+  font-size: 15px;
+  line-height: 15px;
   color: #696969;
+
+}
+
+select:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F49740;
+  border-radius: 10px;
 }
 
 
-.TEST:hover {
-
-  display: block;
-  margin: 0 auto;
-  width: 285px;
-  height: 60px;
-
-  background: #FFFFFF;
-  box-shadow: 0px 0px 10px rgba(105, 105, 105, 0.25);
+select:focus {
+  outline: none;
+  /*
+  outline-style: solid;
+  outline-width: 1px;
+  */
   border-style: solid;
   border-width: 2px;
   border-color: #F49740;
   border-radius: 10px;
-
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  text-align: center;
-  color: #696969;
+  background: white;
 }
-
-
