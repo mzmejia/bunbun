@@ -206,6 +206,16 @@ a:active {
 
 /* ---------------------------------------- CARD STYLING ---------------------------------------- */
 
+.cardTitle {
+  margin-top: 60px;
+  font-family : 'EB Garamond', serif;
+  font-weight : 600;
+  font-size : 100px;
+  line-height : auto;
+  text-align : center;
+  color : #353535;
+}
+
 * {
   box-sizing : border-box;
 }
