@@ -752,3 +752,66 @@ select:focus {
   border-radius : 10px;
   background : white;
 }
+
+/* ---------------------------------------- NEW CART STYLING ---------------------------------------- */
+
+.cartCard {
+  display : flex;
+  padding : 20px;
+  margin : 4%;
+  width : 86%;
+  box-shadow : 0 0 10px rgb(105, 105, 105, 0.25);
+  /*padding : 16px;*/
+  background-color : #FFFFFF;
+  border-radius : 10px;
+  border-style : solid;
+  border-color : #F49740;
+  border-width: 2px;
+  font-family : Lato;
+  font-style : normal;
+  font-weight : 400;
+  font-size : 20px;
+  line-height : 20px;
+  text-align : left;
+  color : #696969;
+}
+
+.cartDetails {
+  padding-top: 5px;
+  display: grid;
+  grid-template-columns : repeat(auto-fit,minmax(100%,100%));
+  width: 100%;
+  grid-auto-rows : 2px;
+  gap : 18px;
+}
+
+.cartImage{
+  padding-right: 20px;
+}
+
+.cartDescription {
+  font-weight: 600;
+  color: #353535;
+}
+
+.cartEditButton {
+  text-align: right;
+
+}
+
+
+.jsTest {
+  padding: 20px;
+  background-color: lightblue;
+}
+
+.textChanger1 {
+  padding: 20px;
+  background-color: lightblue;
+}
+
+.textChanger2 {
+  padding: 20px;
+  background-color: blue;
+  color: white;
+}

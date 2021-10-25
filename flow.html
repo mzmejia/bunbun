@@ -27,63 +27,89 @@
     </nav>
 
 
-    
+  <!--
   <div class="spacer">
     <br>
   </div>
+  
   <div class='selectionDiv'> 
-    <a href="flavor.html"><span class="dotActive"></span></a>      
-    <span class="dot"></span>  <!--<a href="glaze.html"><span class="dotActive"></span></a>-->
-    <span class="dot"></span> <!--<a href="rolls.html"><span class="dotActive"></span></a>-->
-    <!--<span class="dot"></span>   <a href="cart.html"><span class="dotActive"></span></a>  -->
-    
-    <!-- dotActive: current; dotPast: past selection; dot: still to come-->
+    Deleted so you can see more of the page
   </div>
-    
+  -->
+
   <div id='flavorDiv'> 
-    <h2> Which flavor for today? </h2>
-    <p class='flavorP'> Select the flavor you are craving today. <br> Every roll is <strong> 3 dollars</strong> each.</p>
-    <button class='tertiaryButton' id='otherFlavors'><!--<a href="flavor.html">Let's Get Started</a>-->Other Flavors ></button> <!-- Link not set/page not built-->
-    <!--<button class='tertiaryButton' id='backToHome'><a href="index.html">Go Back</a></button> -->
-  </div>
-  <div class="spacer">
-    <br>
-  </div>
+    <h2> Flavor page test </h2>
+    <p class='flavorP'> Select the option, and then add it to the cart. It should now be replicated in the test cart item. <br> It works for every element (flavor, glaze, quantity), but when it spans across pages, it loses connection to the stored value.</p>
+    
+    <!-- Deleted elements so you can see more of the page -->
 
   <div class="row">
     
     <!-- Original flavor -->
-    <a href="glaze.html">
+    <!-- <a href="glaze.html"> -->
       <div class="column">
         <div class="card" onclick="flavOriginal()">
           <br><br><img id="flavorOriginalPic" src="./flavorOriginalGrey.png" height="100px" alt="flavorOriginalGrey"> <br><br><p id="flavorOriginal" >Original</p> <br><br><br><br><br><br></div>
       </div>
-    </a>
+    <!-- </a> -->
 
     <!-- Blackberry flavor -->
-    <a href="glaze.html">
+    <!-- <a href="glaze.html"> -->
       <div class="column">
         <div class="card" onclick="flavBlackberry()">
           <br><br><img id="flavorBlackberryPic" src="./flavorBlackberryGrey.png" height="100px" alt="flavorBlackberryGrey"> <br><br><p id="flavorBlackberry" >Blackberry</p> <br><br><br><br><br><br></div>
       </div>
-    </a>
+    <!-- </a> -->
 
     <!-- Walnut flavor -->
-    <a href="glaze.html">
+    <!-- <a href="glaze.html"> -->
       <div class="column">
         <div class="card" onclick="flavWalnut()">
           <br><br><img id="flavorWalnutPic" src="./flavorWalnutGrey.png" height="100px" alt="flavorWalnutGrey"> <br><br><p id="flavorWalnut" >Walnut</p> <br><br><br><br><br><br></div>
       </div>
-    </a>
+    <!-- </a> -->
 
     <!-- Pumpkin flavor -->
-    <a href="glaze.html">
+    <!-- <a href="glaze.html"> -->
       <div class="column">
         <div class="card" onclick="flavPumpkin()">
           <br><br><img id="flavorPumpkinPic" src="./flavorPumpkinGrey.png" height="100px" alt="flavorPumpkinGrey"> <br><br><p id="flavorPumpkin" >Pumpkin Spice</p> <br><br><br><br><br><br></div>
       </div>
-    </a>
+    <!-- </a> -->
 
+  </div>
+
+
+<!------------Example cart element------------>
+
+  <button class='primaryButtonCart' onclick="addFlavorTest()"> <!-- <a href="flavor.html"> -->Add your selection to the cart below</a></button>
+
+
+  <div class="cartCard" >
+          
+    <div class="cartImage">
+      <img id="cartImage" src="./flavorOriginalGrey.png" height="50px" alt="This is an image of the flavor you selected">
+    </div>
+
+    <div class="cartDetails">
+
+      <div class="cardDetails1">
+        <div class="cartDescription" onclick="cartItemCreatorFlavor1()">
+          Flavor & Quantity
+        </div>
+        <div class="cartGlaze">
+          Glaze
+        </div>
+      </div>
+
+      <div class="cardDetails2">
+        <div class="cartEditButton">
+          Edit Item
+        </div>
+      </div>
+
+    </div>
+  
   </div>
 
   
