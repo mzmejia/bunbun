@@ -24,7 +24,7 @@ Primary Pseudocode for adding selections to an item to be stored in the cart
     
 - When the quantity is selected, add those elements into a blank state of a cart item
 
-- Update the cart total to be a multiple of the quanittiy in said item(s) 
+- Update the cart total to be a multiple of the quantity in said item(s) 
 
 - If another item is added, make sure it is ADDED to the cart value, not in replace of it
 
@@ -32,96 +32,6 @@ Primary Pseudocode for adding selections to an item to be stored in the cart
 
 */
 
-
-/*
-
-var itemSelector = document.getElementByClassName('split right') {
-  //var title = itemSelector.innertext
-  console.log(itemSelector)
-}
-*/
-
-
-/*
-function itemCreatorFlavor() {
-  var selectTheFlavor = document.getElementByClassName('NAME')
-  var selectedFlavor = selectTheFlavor.innertext
-  console.log(selectedFlavor)
-}
-*/
-
-//var TestClick = document.getElementByClassName('card')
-//console.log(TestClick)
-
-/*
-function addToCartClicked(event) {
-  var button = event.target
-  var flavorItem = button.parentElement.parentElement
-  var title = shopItem.getElementByClassName('column')[0].innertext
-  console.log(title)
-}
-*/
-
-/*
-function cartItemCreatorFlavor() {
-  console.log('hello world');
-  //document.write("welcome to Javatpoint"); 
-}
-*/
-
-/*
-function cartItemCreatorFlavor() {
-  var testItem = document.getElementsByClassName('jsTest')[0].innerHTML;
-  console.log(testItem);
-  //document.write("welcome to Javatpoint"); 
-}
-*/
-
-/*
-function changeTheInnerText() {
-  var textChange = document.getElementsByClassName('textChanger1')[0].innerHTML;
-  console.log(textChange);
-  cartItemCreatorFlavor1();
-}
-*/
-//create a button that will change the interior text, call the item creator function 1, and see if it will rplicate
-
-/*
-//this one works!!! attached straight to the div of the actual element and it prints the current html element, replace the text with the text from the textChange
-function cartItemCreatorFlavor1() {
-  var flavorChange = document.getElementsByClassName('textChanger1')[1].innerHTML;
-  var quantityChange = document.getElementsByClassName('textChanger2')[0].innerHTML;
-  //var glazeChange = document.getElementsByClassName('textChanger3')[0].innerHTML;
-  document.getElementsByClassName('cartDescription')[0].innerHTML = flavorChange + " x" + quantityChange;
-  //document.getElementsByClassName('cartGlaze')[0].innerHTML = glazeChange;
-
-  //var testItem1 = document.getElementsByClassName('cartDescription')[0].innerHTML;
-  //console.log(testItem1);
-  //document.write("welcome world"); 
-}
-*/
-
-/*
-function flavor() {
-  if (document.getElementById('number1').innerHTML = 'Original') {
-    console.log('yeah orginal worked')
-    var newFlavor = document.getElementById('number1').innerHTML;
-    console.log(newFlavor)
-  } else {
-    console.log('no man')
-  } 
-}
-
-function flavor2() {
-  if (document.getElementById('number2').innerHTML = 'Blackberry') {
-    console.log('yeah blackberry worked')
-    var newFlavor = document.getElementById('number2').innerHTML;
-    console.log(newFlavor)
-  } else {
-    console.log('no man')
-  } 
-}
-*/
 
 
 //---------------------------------------------Flavor selection functions---------------------------------------------
@@ -318,4 +228,99 @@ function cartItemAdd() {
   //add the item to the cart
   //can we reset the variables from here?
 //}
+*/
+
+
+
+
+//------------ Undecipherable failed attempts
+
+/*
+
+var itemSelector = document.getElementByClassName('split right') {
+  //var title = itemSelector.innertext
+  console.log(itemSelector)
+}
+*/
+
+
+/*
+function itemCreatorFlavor() {
+  var selectTheFlavor = document.getElementByClassName('NAME')
+  var selectedFlavor = selectTheFlavor.innertext
+  console.log(selectedFlavor)
+}
+*/
+
+//var TestClick = document.getElementByClassName('card')
+//console.log(TestClick)
+
+/*
+function addToCartClicked(event) {
+  var button = event.target
+  var flavorItem = button.parentElement.parentElement
+  var title = shopItem.getElementByClassName('column')[0].innertext
+  console.log(title)
+}
+*/
+
+/*
+function cartItemCreatorFlavor() {
+  console.log('hello world');
+  //document.write("welcome to Javatpoint"); 
+}
+*/
+
+/*
+function cartItemCreatorFlavor() {
+  var testItem = document.getElementsByClassName('jsTest')[0].innerHTML;
+  console.log(testItem);
+  //document.write("welcome to Javatpoint"); 
+}
+*/
+
+/*
+function changeTheInnerText() {
+  var textChange = document.getElementsByClassName('textChanger1')[0].innerHTML;
+  console.log(textChange);
+  cartItemCreatorFlavor1();
+}
+*/
+//create a button that will change the interior text, call the item creator function 1, and see if it will rplicate
+
+/*
+//this one works!!! attached straight to the div of the actual element and it prints the current html element, replace the text with the text from the textChange
+function cartItemCreatorFlavor1() {
+  var flavorChange = document.getElementsByClassName('textChanger1')[1].innerHTML;
+  var quantityChange = document.getElementsByClassName('textChanger2')[0].innerHTML;
+  //var glazeChange = document.getElementsByClassName('textChanger3')[0].innerHTML;
+  document.getElementsByClassName('cartDescription')[0].innerHTML = flavorChange + " x" + quantityChange;
+  //document.getElementsByClassName('cartGlaze')[0].innerHTML = glazeChange;
+
+  //var testItem1 = document.getElementsByClassName('cartDescription')[0].innerHTML;
+  //console.log(testItem1);
+  //document.write("welcome world"); 
+}
+*/
+
+/*
+function flavor() {
+  if (document.getElementById('number1').innerHTML = 'Original') {
+    console.log('yeah orginal worked')
+    var newFlavor = document.getElementById('number1').innerHTML;
+    console.log(newFlavor)
+  } else {
+    console.log('no man')
+  } 
+}
+
+function flavor2() {
+  if (document.getElementById('number2').innerHTML = 'Blackberry') {
+    console.log('yeah blackberry worked')
+    var newFlavor = document.getElementById('number2').innerHTML;
+    console.log(newFlavor)
+  } else {
+    console.log('no man')
+  } 
+}
 */
