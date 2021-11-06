@@ -416,10 +416,12 @@ a:active {
   border-left-color : #F49740;
 }
 
+/*
 .centered img {
   width : fit-content;
   opacity : 25%;
 }
+*/
 
 .cartElement {
   display : block;
@@ -814,4 +816,132 @@ select:focus {
   padding: 20px;
   background-color: blue;
   color: white;
+}
+
+
+/* ---------------------------------- */
+
+
+/* 
+
+.cardNew {
+  box-shadow : 0 0 10px rgb(105, 105, 105, 0.25);
+  padding : 16px;
+  background-color : #FFFFFF;
+  border-radius : 10px;
+  font-family : Lato;
+  font-style : normal;
+  font-weight : 400;
+  font-size : 20px;
+  line-height : 20px;
+  text-align : center;
+  color : #696969;
+}
+
+*/
+
+/*
+.cardNew:hover {
+  box-shadow : 0 0 10px rgb(105, 105, 105, 0.25);
+  padding : 16px;
+  background-color : #FFFFFF;
+  border-radius : 10px;
+  border-style : solid;
+  border-color : #F49740;
+  font-family : Lato;
+  font-style : normal;
+  font-weight : 400;
+  font-size : 20px;
+  line-height : 20px;
+  text-align : center;
+  color : #353535;
+}
+*/
+
+
+
+.cardNew {
+  display : flex;
+  padding : 20px;
+  margin : 0;
+  width : 86%;
+  box-shadow : 0 0 10px rgb(105, 105, 105, 0.25);
+  /*padding : 16px;*/
+  background-color : #FFFFFF;
+  border-radius : 10px;
+  font-family : Lato;
+  font-style : normal;
+  font-weight : 400;
+  font-size : 20px;
+  line-height : 20px;
+  text-align : left;
+  color : #696969;
+}
+
+
+.cardNew:hover {
+  display : flex;
+  padding : 20px;
+  margin : 0;
+  width : 86%;
+  box-shadow : 0 0 10px rgb(105, 105, 105, 0.25);
+  /*padding : 16px;*/
+  background-color : #FFFFFF;
+  border-radius : 10px;
+  border-style : solid;
+  border-color : #F49740;
+  border-width: 2px;
+  font-family : Lato;
+  font-style : normal;
+  font-weight : 400;
+  font-size : 20px;
+  line-height : 20px;
+  text-align : left;
+  color : #696969;
+}
+
+
+/*
+#mainFlavorDiv {
+  display: block;
+}
+
+#mainFlavorDiv:active {
+  display: none;
+}
+*/
+
+
+#mainFlavorDiv {
+  display: block;
+}
+
+#mainGlazeDiv {
+  display: none;
+}
+
+#mainQuantityDiv {
+  display: none;
+}
+
+.hidden {
+  color: #FFFFFF;
+}
+
+
+
+
+.cartOrderTotal {
+  padding-left : 5%;
+  padding-bottom : 0;
+  font-family : 'EB Garamond', serif;
+  font-weight : normal;
+  font-size : 40px;
+  line-height : 40px;
+  text-align : left;
+  color : #353535;
+}
+
+#itemNumber1 {
+  display: none;
 }

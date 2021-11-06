@@ -1,0 +1,244 @@
+<!-- BunBun -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flow Test</title>
+    <meta name="Marlon Z. Mejia" content="BunBun">
+    <link href="style.css" rel="stylesheet">
+      <!-- type="text/css" -->
+     <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <ul class='NavList'>
+        <!-- <li class='leftNavListItem'><a href="flavor.html">Order Now</a></li> -->
+        <li class='leftNavListItem'>About</li> <!-- Page not built yet -->
+        <li class='leftNavListItem'>Location</li> <!-- Page not built yet -->
+        <li class='centerNavListItem'><!--Add colored underline: <u style='text-decoration-color: #F49740;'>--></u><a href="index.html">BunBun</a></u></li>
+        <!-- this is where the cart item could go if needed again -->
+        <!--<li class='rightNavListItem'>Your Cart</li>--> <!-- Open full cart -->
+        <li class='rightNavListItem'>Login</li> <!-- Page not built yet -->
+      </ul>
+    </nav>
+
+
+  
+
+  <div class="split leftCheckout">
+    
+<!-- --------------------------------- Flavor Div --------------------------------- -->
+
+
+    <div class="centered" id='mainFlavorDiv'>
+      <div class='checkoutSelectionDiv'> 
+        <a href="checkout-details.html"><span class="dotActive"></span></a>      
+        <span class="dot"></span>  <!--<a href="glaze.html"><span class="dotActive"></span></a>-->
+        <span class="dot"></span>
+        <!-- <span class="dot"></span> -->    
+        <!-- dotActive: current; dotPast: past selection; dot: still to come-->
+      </div>
+
+      <h2 class='checkoutH2Right'> Select the flavor </h2>
+
+
+      
+      <!-- Form test -->
+      <div class='checkoutFormDiv' id='flavorSelector'> 
+        
+        <div class="cardNew" onclick="flavOriginal()">
+          <img id="flavorOriginalPic" src="./flavorOriginalGrey.png" height="50px" alt="flavorOriginalGrey"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="flavorOriginal" >Original</p> </div>
+        
+        <div class="cardNew" onclick="flavBlackberry()">
+          <img id="flavorBlackberryPic" src="./flavorBlackberryGrey.png" height="50px" alt="flavorBlackberryGrey"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="flavorBlackberry" >Blackberry</p> </div>
+      </div>
+
+      <div class='checkoutFormDiv'> 
+        <div class="cardNew" onclick="flavWalnut()">
+          <img id="flavorWalnutPic" src="./flavorWalnutGrey.png" height="50px" alt="flavorWalnutGrey"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="flavorWalnut" >Walnut</p> </div>
+      
+        <div class="cardNew" onclick="flavPumpkin()">
+          <img id="flavorPumpkinPic" src="./flavorPumpkinGrey.png" height="50px" alt="flavorPumpkinGrey"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="flavorPumpkin" >Pumpkin Spice</p> </div>
+      </div>
+
+      <div class='checkoutFormDiv'> 
+        <div class="cardNew" onclick="flavCaramel()">
+          <img id="flavorCaramelPic" src="./flavorCaramelGrey.png" height="50px" alt="flavorCaramelGrey"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="flavorCaramel" >Caramel Pecan</p> </div>
+      
+        <div class="cardNew" onclick="flavGlutenFree()">
+          <img id="flavorGlutenFreePic" src="./flavorGlutenFreeGrey.png" height="50px" alt="flavorGlutenFreeGrey"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="flavorGlutenFree" >Gluten Free</p> </div>
+      </div>
+
+      <!--<button class='tertiaryButton' id='backToHome'><a href="index.html">Go Back</a></button> -->
+      <button class='primaryButtonCheckout'><a href="index.html">Go Back</a></button>
+
+
+    </div>
+
+
+
+
+
+
+<!-- --------------------------------- Glaze Div --------------------------------- -->
+
+    <div class="centered" id='mainGlazeDiv'>
+      <div class='checkoutSelectionDiv'> 
+        <span class="dotPast"></span>      
+        <span class="dotActive"></span>  <!--<a href="glaze.html"><span class="dotActive"></span></a>-->
+        <span class="dot"></span>
+        <!-- <span class="dot"></span> -->    
+        <!-- dotActive: current; dotPast: past selection; dot: still to come-->
+      </div>
+
+      <h2 class='checkoutH2Right'> Select the glaze </h2>
+
+
+      
+      <!-- Form test -->
+      <div class='checkoutFormDiv' id='glazeSelector'> 
+        
+        <div class="cardNew" onclick="glazeNone()">
+          <img id="glazeNonePic" src="./glazeNoneGrey.png" height="50px" alt="glazeNoneGrey"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="glazeNone" >None</p> </div>
+        
+        <div class="cardNew" onclick="glazeSugar()">
+          <img id="glazeSugarPic" src="./glazeSugarGrey.png" height="50px" alt="glazeSugarGrey"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="glazeSugar" >Sugar Milk</p> </div>
+      </div>
+
+      <div class='checkoutFormDiv'> 
+        
+        <div class="cardNew" onclick="glazeVanilla()">
+          <img id="glazeVanillaPic" src="./glazeVanillaGrey.png" height="50px" alt="glazeVanillaGrey"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="glazeVanilla" >Vanilla Milk</p> </div>
+        
+        <div class="cardNew" onclick="glazeChoco()">
+          <img id="glazeChocoPic" src="./glazeChocoGrey.png" height="50px" alt="glazeChocoGrey"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="glazeChoco" >Double Chocolate</p> </div>
+      </div>      
+
+      <!--<button class='tertiaryButton' id='backToHome'><a href="index.html">Go Back</a></button> -->
+      <button class='primaryButtonCheckout' id="backToFlavorDiv" onclick="showFlavorDiv()">Go back</a></button>
+
+
+    </div>
+
+
+
+
+
+    <!-- --------------------------------- Quantity Div --------------------------------- -->
+
+    <div class="centered" id='mainQuantityDiv'>
+      <div class='checkoutSelectionDiv'> 
+        <span class="dotPast"></span>      
+        <span class="dotPast"></span>  <!--<a href="glaze.html"><span class="dotActive"></span></a>-->
+        <span class="dotActive"></span>
+        <!-- <span class="dot"></span> -->    
+        <!-- dotActive: current; dotPast: past selection; dot: still to come-->
+      </div>
+
+      <h2 class='checkoutH2Right'> Select the quantity </h2>
+
+
+      
+      <!-- Form test -->
+      <div class='checkoutFormDiv' id='glazeSelector'> 
+        
+        <div class="cardNew" onclick="quantity1()">
+          <img id="quantity1Pic" src="./1.png" height="50px" alt="quantity1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p> One </p> <p class='hidden' id="quantity1" >1</p></div>
+        
+        <div class="cardNew" onclick="quantity3()">
+          <img id="quantity3Pic" src="./3.png" height="50px" alt="quantity3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p> Three </p> <p class='hidden' id="quantity3" >3</p></div>
+      </div>
+
+      <div class='checkoutFormDiv'> 
+        
+        <div class="cardNew" onclick="quantity6()">
+          <img id="quantity6Pic" src="./6.png" height="50px" alt="quantity6"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p> Half-dozen </p> <p class='hidden' id="quantity6" >6</p></div>
+        
+        <div class="cardNew" onclick="quantity12()">
+          <img id="quantity12Pic" src="./12.png" height="50px" alt="quantity12"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p> Dozen </p> <p class='hidden' id="quantity12" >12</p> </div>
+      </div>
+
+      <!--<button class='tertiaryButton' id='backToHome'><a href="index.html">Go Back</a></button> -->
+      <button class='primaryButtonCheckout' id="backToGlazeDiv" onclick="showGlazeDiv()">Go back</a></button>
+
+
+    </div>
+    
+    
+  </div>
+
+
+
+
+  <div class="split rightCheckout">
+
+    <div class="checkoutCentered">
+      
+      <!-- Original toggle for hiding the div
+      <button class='primaryButtonCheckout' onclick="showGlazeDiv()">Hide main div</a></button>
+      -->
+
+      <h2 class='checkoutH2Left'> Your cart </h2>
+      <!-- Original view of a cart element
+      <img class="cartElement" src="./Cart element.png" alt="Filled Cart element">
+      -->
+
+      <div id="placeholderText">
+        <p class="checkoutPRight"> You have not created an item yet</p>
+      </div>
+      
+      <div class="cartCard" id='itemNumber1'>
+          
+        <div class="cartImage">
+          <img id="cartImage" src="./flavorOriginalGrey.png" height="50px" alt="This is an image of the flavor you selected">
+        </div>
+    
+        <div class="cartDetails">
+    
+          <div class="cardDetails1">
+            <div class="cartDescription" onclick="cartItemCreatorFlavor1()">
+              Flavor & Quantity
+            </div>
+            <div class="cartGlaze">
+              Glaze
+            </div>
+          </div>
+    
+          <div class="cardDetails2">
+            <div class="cartEditButton">
+              Edit Item
+            </div>
+          </div>
+    
+        </div>
+      
+      </div>
+
+      <!-- 
+      <p class='checkoutPRight'> Subtotal  &nbsp;&nbsp;  &nbsp;&nbsp;  $9</p>
+      <p class='checkoutPRight'> <br>Estimated tax &nbsp;&nbsp;  &nbsp;&nbsp;  $.40</p>
+      -->
+      
+      <!-- originial toggle for changing the interior text on a new cart item
+      <button class='primaryButtonCart' onclick="addFlavorTest()"> Add your selection to the cart below</a></button>
+      -->
+
+    
+      <div class='cartOrderTotal'>
+        <p id="orderTotal"> Order total: $0 </p>
+      </div>
+
+
+      <!--<button class='tertiaryButton' id='backToHome'><a href="index.html">Go Back</a></button> -->
+      <button class='primaryButtonCheckoutPlaceOrderDisabled'>Place Order</button> <!-- <a href="flavor.html">Place Order</a></button>-->
+
+
+
+    </div>
+  </div>
+
+  </body>
+</html>
