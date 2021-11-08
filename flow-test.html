@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Flow Test</title>
+    <title>BunBun - Create</title>
     <meta name="Marlon Z. Mejia" content="BunBun">
     <link href="style.css" rel="stylesheet">
       <!-- type="text/css" -->
@@ -29,7 +29,8 @@
   
 
   <div class="split leftCheckout">
-    
+
+
 <!-- --------------------------------- Flavor Div --------------------------------- -->
 
 
@@ -168,6 +169,236 @@
     </div>
     
     
+
+    <!-- --------------------------------- Checkout Details Div --------------------------------- -->
+
+    <div class="centered" id="checkoutDetailsDiv">
+      <div class='checkoutSelectionDiv'> 
+        <a href="checkout-details.html"><span class="dotActive"></span></a>      
+        <span class="dot"></span>  <!--<a href="glaze.html"><span class="dotActive"></span></a>-->
+        <span class="dot"></span>
+        <span class="dot"></span>      
+        <!-- dotActive: current; dotPast: past selection; dot: still to come-->
+      </div>
+
+      <h2 class='checkoutH2Right'> Your details </h2>
+
+
+      
+      <!-- Form test -->
+      <div class='checkoutFormDiv'> 
+        <p>
+          <label for="fname">First name</label>
+          <input type="text" id="fname" name="fname" placeholder="Type your first name" autofocus>
+        </p>
+        <p>
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="lname" placeholder="Type your last name">
+        </p>
+      </div>
+      <div class='checkoutFormDiv'> 
+        <p>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Type your email">
+        </p>
+        <p>
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phone" placeholder="Type your phone number">
+        </p>
+      </div>
+      <!--<button class='tertiaryButton' id='backToHome'><a href="index.html">Go Back</a></button> -->
+      <button class='primaryButtonCheckout' onclick="showAddressDiv()">Next Step</button>
+    </div>
+
+
+    <!-- --------------------------------- Checkout Address Div --------------------------------- -->
+
+    <div class="centered" id='checkoutAddressDiv'>
+      <div class='checkoutSelectionDiv'> 
+        <a href="checkout-details.html"><span class="dotPast"></span></a>
+        <a href="checkout-address.html"><span class="dotActive"></span></a>      
+        <span class="dot"></span>
+        <span class="dot"></span>      
+        <!-- dotActive: current; dotPast: past selection; dot: still to come-->
+      </div>
+
+      <h2 class='checkoutH2Right'> Your address </h2>
+
+      <!-- Form test -->
+      <div class='checkoutFormDiv'> 
+        <p>
+          <label for="add1">Address 1</label>
+          <input type="text" id="add1" name="add1" placeholder="Type the address of your street" autofocus>
+        </p>
+        <p>
+          <label for="add2">Address 2</label>
+          <input type="text" id="add2" name="add2" placeholder="Type address 2 - Optional (ex. Apt 233)">
+        </p>
+      </div>
+      <div class='checkoutFormDiv'> 
+        <p>
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" name="zip" placeholder="Type your zip code">
+        </p>
+        <p>
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="Type your city">
+        </p>
+      </div>
+      <div class='checkoutFormDiv'> 
+        <p>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="Select your country">Select your country</option>
+            <option value="Country Name1">Country Name1</option>
+            <option value="Country Name2">Country Name2</option>
+            <option value="USA">USA</option>
+            <option value="Country Name4">Country Name4</option>
+            <option value="Country Name5">Country Name5</option>
+          </select>
+        </p>
+        <p>
+          <label for="state">State</label>
+          <select id="state" name="state">
+            <option value="Select your state">Select your state</option>
+            <option value="State Name1">State Name1</option>
+            <option value="State Name2">State Name2</option>
+            <option value="State Name3">State Name3</option>
+            <option value="PA">PA</option>
+            <option value="State Name5">State Name5</option>
+          </select>
+          <!-- Would typically only show if USA is slected-->
+        </p>
+        
+      </div>
+      <!--<button class='tertiaryButton' id='backToHome'><a href="index.html">Go Back</a></button> -->
+      <button class='primaryButtonCheckout' onclick="showPaymentDiv()">Next Step</button>
+    </div>
+
+
+    <!-- --------------------------------- Checkout Payment Div --------------------------------- -->
+
+    <div class="centered" id="checkoutPaymentDiv">
+      <div class='checkoutSelectionDiv'> 
+        <a href="checkout-details.html"><span class="dotPast"></span></a>
+        <a href="checkout-address.html"><span class="dotPast"></span></a>      
+        <a href="checkout-payment.html"><span class="dotActive"></span></a>      
+        <span class="dot"></span>      
+        <!-- dotActive: current; dotPast: past selection; dot: still to come-->
+      </div>
+
+      <h2 class='checkoutH2Right'> Your payment </h2>
+
+
+      
+      <!-- Form test -->
+      <div class='checkoutFormDiv'> 
+        <p>
+          <label for="card">Card Details</label>
+          <input type="text" id="card" name="card" placeholder="Type your 9 digit card number" autofocus>
+          <!-- Make this have to include 9 digits -->
+        </p>
+        <p>
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" name="zip" placeholder="Type your zip code">
+        </p>
+      </div>
+      <div class='checkoutFormDiv'> 
+        <p>
+          <label for="expir">Expiration Date</label>
+          <input type="text" id="expir" name="expir" placeholder="Type the expiration date (MM/YY)">
+        </p>
+        <p>
+          <label for="cvc">CVC</label>
+          <input type="text" id="cvc" name="cvc" placeholder="Type the CVC (XXX)">
+        </p>
+      </div>
+      <div class='checkoutFormDiv'> 
+        <p>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="Select your country">Select your country</option>
+            <option value="Country Name1">Country Name1</option>
+            <option value="Country Name2">Country Name2</option>
+            <option value="USA">USA</option>
+            <option value="Country Name4">Country Name4</option>
+            <option value="Country Name5">Country Name5</option>
+          </select>
+        </p>
+        <p>
+          <label for="state">State</label>
+          <select id="state" name="state">
+            <option value="Select your state">Select your state</option>
+            <option value="State Name1">State Name1</option>
+            <option value="State Name2">State Name2</option>
+            <option value="State Name3">State Name3</option>
+            <option value="PA">PA</option>
+            <option value="State Name5">State Name5</option>
+          </select>
+          <!-- Would typically only show if USA is slected-->
+        </p>
+        
+      </div>
+      <!--<button class='tertiaryButton' id='backToHome'><a href="index.html">Go Back</a></button> -->
+      <button class='primaryButtonCheckout' onclick="showReviewDiv()">Next Step</button>
+    </div>
+
+
+    <!-- --------------------------------- Checkout Review Div --------------------------------- -->
+
+    <div class="centered" id="checkoutReviewDiv">
+      <div class='checkoutSelectionDiv'> 
+        <a href="checkout-details.html"><span class="dotPast"></span></a>
+        <a href="checkout-address.html"><span class="dotPast"></span></a>      
+        <a href="checkout-payment.html"><span class="dotPast"></span></a>      
+        <a href="checkout-review.html"><span class="dotActive"></span></a> 
+        <!-- dotActive: current; dotPast: past selection; dot: still to come-->
+      </div>
+
+      <h2 class='checkoutH2Right'> Review information </h2>
+
+
+      
+      <!-- Form test -->
+      <div class='checkoutFormDivReview'> 
+        <p>
+          <label for="fnameFilled">First name</label>
+          <input type="text" id="fnameFilled" name="fnameFilled" placeholder="Jamie" >
+        </p>
+        <p>
+          <label for="lnameFilled">Last name</label>
+          <input type="text" id="lnameFilled" name="lnameFilled" placeholder="Rodrigez">
+        </p>
+      </div>
+      <div class='checkoutFormDivReview'> 
+        <p>
+          <label for="emailFilled">Email</label>
+          <input type="text" id="emailFilled" name="emailFilled" placeholder="jrod96@gmail.com">
+        </p>
+        <p>
+          <label for="phoneFilled">Phone Number</label>
+          <input type="text" id="phoneFilled" name="phoneFilled" placeholder="554-954-0144">
+        </p>
+      </div>
+      <div class='checkoutFormDivReview'> 
+        <p>
+          <label for="addressFilled">Address</label>
+          <input type="text" id="addressFilled" name="addressFilled" placeholder="293 Bluestone Drive, Pittsburgh, PA 15219">
+        </p>
+        <p>
+          <label for="cardFilled">Card Details</label>
+          <input type="text" id="cardFilled" name="cardFilled" placeholder="XXXX-XXXX-XXXX-2002">
+          <!-- Make this have to include 16 digits -->
+        </p>
+      </div>
+      <!--<button class='tertiaryButton' id='backToHome'><a href="index.html">Go Back</a></button> -->
+      <button class='primaryButtonCheckout' onclick="placeTheOrderMain()">Edit</button> 
+    </div>
+
+
+
+
+  <!-- end of the left checkout div-->  
   </div>
 
 
@@ -208,8 +439,8 @@
           </div>
     
           <div class="cardDetails2">
-            <div class="cartEditButton">
-              Edit Item
+            <div class="cartEditButton" id="removeItem1" onclick="removeCartItem1()">
+              Remove Item
             </div>
           </div>
     
@@ -233,7 +464,11 @@
 
 
       <!--<button class='tertiaryButton' id='backToHome'><a href="index.html">Go Back</a></button> -->
-      <button class='primaryButtonCheckoutPlaceOrderDisabled'>Place Order</button> <!-- <a href="flavor.html">Place Order</a></button>-->
+      <button class='primaryButtonCheckoutPlaceOrderDisabled' id="placeOrderButton" onclick="goToCheckout()">Go to Checkout</button> <!-- <a href="flavor.html">Place Order</a></button>-->
+      
+      <!-- real place order button lol -->
+      <button class='primaryButtonCheckoutPlaceOrderDisabled' id="placeTheRealOrderButton" ><a href="confirmation.html">Place Order</a></button> <!-- <a href="flavor.html">Place Order</a></button>-->
+
 
 
 

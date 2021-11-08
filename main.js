@@ -70,10 +70,10 @@ button.addEventListener('click', saveToLocalStorage)
 //---------------------------------------------Flavor selection functions---------------------------------------------
 /* 
 NOTE: I built this page to mimic what I was creating. The entire process of selecting and adding an item takes place
-with 3 seperate pages (flavor,glaze, and qunatity). Everytime I would store those variables in one page,
-it would automatically be lost when trying to update the element within a cart. Because of this, I have
-not tried to add an element to the cart because I could not even get it to update properly. I believe I
-have a good idea on how to add a new element, so am planning on working on that as well
+with 3 seperate pages (flavor,glaze, and qunatity) and then the checkout flows are built within the page as well. 
+Everytime I would store those variables in one page, it would automatically be lost when trying to update the element 
+within a cart. Because of this, I have not tried to add an element to the cart because I could not even get it to update 
+properly. I believe I have a good idea on how to add a new element, so am planning on working on that as well
 */
 
 
@@ -95,7 +95,15 @@ function flavOriginal () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'block';
   quantityDiv.style.display = 'none';
-  
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 //------------ Variables for blackberry element
@@ -114,6 +122,15 @@ function flavBlackberry () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'block';
   quantityDiv.style.display = 'none';
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 //------------ Variables for walnut element
@@ -131,6 +148,15 @@ function flavWalnut () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'block';
   quantityDiv.style.display = 'none';
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 //------------ Variables for pumpkin spice element
@@ -149,6 +175,15 @@ function flavPumpkin () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'block';
   quantityDiv.style.display = 'none';
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 //------------ Variables for caramel pecan element
@@ -167,6 +202,15 @@ function flavCaramel () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'block';
   quantityDiv.style.display = 'none';
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 //------------ Variables for gluten free element
@@ -185,6 +229,15 @@ function flavGlutenFree () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'block';
   quantityDiv.style.display = 'none';
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 
@@ -204,6 +257,15 @@ function glazeNone () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'none';
   quantityDiv.style.display = 'block';
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 
@@ -220,6 +282,15 @@ function glazeSugar () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'none';
   quantityDiv.style.display = 'block';
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 
@@ -236,6 +307,15 @@ function glazeVanilla () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'none';
   quantityDiv.style.display = 'block';
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 
@@ -252,6 +332,15 @@ function glazeChoco () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'none';
   quantityDiv.style.display = 'block';
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 
@@ -278,6 +367,24 @@ function quantity1 () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'none';
   quantityDiv.style.display = 'block';
+  var showItem = document.getElementById('itemNumber1');
+  var hideText = document.getElementById('placeholderText');
+  showItem.style.display = 'flex';
+  hideText.style.display = 'none';
+  //change the state of the button to enabled
+  document.getElementById("placeOrderButton").classList.add('primaryButtonCheckoutPlaceOrder');
+  document.getElementById("placeOrderButton").classList.remove('primaryButtonCheckoutPlaceOrderDisabled');
+  if ( document.getElementById("placeOrderButton").classList.contains('primaryButtonCheckoutPlaceOrderDisabled') )
+  document.getElementById("placeOrderButton").classList.toggle('primaryButtonCheckoutPlaceOrder');
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 
@@ -300,6 +407,24 @@ function quantity3 () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'none';
   quantityDiv.style.display = 'block';
+  var showItem = document.getElementById('itemNumber1');
+  var hideText = document.getElementById('placeholderText');
+  showItem.style.display = 'flex';
+  hideText.style.display = 'none';
+  //change the state of the button to enabled
+  document.getElementById("placeOrderButton").classList.add('primaryButtonCheckoutPlaceOrder');
+  document.getElementById("placeOrderButton").classList.remove('primaryButtonCheckoutPlaceOrderDisabled');
+  if ( document.getElementById("placeOrderButton").classList.contains('primaryButtonCheckoutPlaceOrderDisabled') )
+  document.getElementById("placeOrderButton").classList.toggle('primaryButtonCheckoutPlaceOrder');
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 
@@ -322,6 +447,24 @@ function quantity6 () {
   flavorDiv.style.display = 'none';
   glazeDiv.style.display = 'none';
   quantityDiv.style.display = 'block';
+  var showItem = document.getElementById('itemNumber1');
+  var hideText = document.getElementById('placeholderText');
+  showItem.style.display = 'flex';
+  hideText.style.display = 'none';
+  //change the state of the button to enabled
+  document.getElementById("placeOrderButton").classList.add('primaryButtonCheckoutPlaceOrder');
+  document.getElementById("placeOrderButton").classList.remove('primaryButtonCheckoutPlaceOrderDisabled');
+  if ( document.getElementById("placeOrderButton").classList.contains('primaryButtonCheckoutPlaceOrderDisabled') )
+  document.getElementById("placeOrderButton").classList.toggle('primaryButtonCheckoutPlaceOrder');
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
 //------------ Variables for 12
@@ -347,9 +490,130 @@ function quantity12 () {
   var hideText = document.getElementById('placeholderText');
   showItem.style.display = 'flex';
   hideText.style.display = 'none';
-
+  //change the state of the button to enabled
+  document.getElementById("placeOrderButton").classList.add('primaryButtonCheckoutPlaceOrder');
+  document.getElementById("placeOrderButton").classList.remove('primaryButtonCheckoutPlaceOrderDisabled');
+  if ( document.getElementById("placeOrderButton").classList.contains('primaryButtonCheckoutPlaceOrderDisabled') )
+  document.getElementById("placeOrderButton").classList.toggle('primaryButtonCheckoutPlaceOrder');
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
 }
 
+
+
+
+
+
+//------------------------------------------------------------ Checkout divs
+
+
+//------------ Show checkout address
+
+function showAddressDiv () {
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'block';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none'; 
+}
+
+
+//------------ Show checkout payment
+
+function showPaymentDiv () {
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'block';
+  checkoutReviewDiv.style.display = 'none'; 
+}
+
+
+//------------ Show checkout review
+
+function showReviewDiv () {
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'none';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'block'; 
+  var oldPlaceOrderButton = document.getElementById('placeOrderButton');
+  var realPlaceOrderButton = document.getElementById('placeTheRealOrderButton');
+  oldPlaceOrderButton.style.display = 'none';
+  realPlaceOrderButton.style.display = 'block';
+  //change the state of the place order button 
+  document.getElementById("placeTheRealOrderButton").classList.add('primaryButtonCheckoutPlaceOrder');
+  document.getElementById("placeTheRealOrderButton").classList.remove('primaryButtonCheckoutPlaceOrderDisabled');
+  if ( document.getElementById("placeTheRealOrderButton").classList.contains('primaryButtonCheckoutPlaceOrderDisabled') )
+  document.getElementById("placeTheRealOrderButton").classList.toggle('primaryButtonCheckoutPlaceOrder');
+}
+
+
+
+//------------ Go to checkout
+
+function goToCheckout () {
+  //Hide the item creator divs
+  var flavorDiv = document.getElementById('mainFlavorDiv');
+  var glazeDiv = document.getElementById('mainGlazeDiv');
+  var quantityDiv = document.getElementById('mainQuantityDiv')
+  flavorDiv.style.display = 'none';
+  glazeDiv.style.display = 'none';
+  quantityDiv.style.display = 'none';  
+  //Checkout divs
+  var checkoutDetailsDiv = document.getElementById('checkoutDetailsDiv');
+  var checkoutAddressDiv = document.getElementById('checkoutAddressDiv');
+  var checkoutPaymentDiv = document.getElementById('checkoutPaymentDiv')
+  var checkoutReviewDiv = document.getElementById('checkoutReviewDiv')
+  checkoutDetailsDiv.style.display = 'block';
+  checkoutAddressDiv.style.display = 'none';
+  checkoutPaymentDiv.style.display = 'none';
+  checkoutReviewDiv.style.display = 'none';
+  //change the checkout button
+  var oldPlaceOrderButton = document.getElementById('placeOrderButton');
+  var realPlaceOrderButton = document.getElementById('placeTheRealOrderButton');
+  oldPlaceOrderButton.style.display = 'none';
+  realPlaceOrderButton.style.display = 'block';
+}
+
+
+
+
+//------------ Remove cart item 1
+
+function removeCartItem1(){
+  //hide the cart item
+  var hideItem1 = document.getElementById('itemNumber1');
+  var showText= document.getElementById('placeholderText');
+  hideItem1.style.display = 'none';
+  showText.style.display = 'block';
+  //change the state of the button to disabled
+  document.getElementById("placeOrderButton").classList.add('primaryButtonCheckoutPlaceOrderDisabled');
+  document.getElementById("placeOrderButton").classList.remove('primaryButtonCheckoutPlaceOrder');
+  if ( document.getElementById("placeOrderButton").classList.contains('primaryButtonCheckoutPlaceOrder') )
+  document.getElementById("placeOrderButton").classList.toggle('primaryButtonCheckoutPlaceOrderDisabled');
+  //reload the page
+  location.reload(); 
+}
 
 
 

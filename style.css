@@ -945,3 +945,24 @@ select:focus {
 #itemNumber1 {
   display: none;
 }
+
+
+#checkoutDetailsDiv {
+  display: none;
+}
+
+#checkoutAddressDiv {
+  display: none;
+}
+
+#checkoutPaymentDiv {
+  display: none;
+}
+
+#checkoutReviewDiv {
+  display: none;
+}
+
+#placeTheRealOrderButton {
+  display: none;
+}
